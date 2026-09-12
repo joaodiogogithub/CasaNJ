@@ -1,0 +1,30 @@
+.container{
+    width:100%;
+    padding:70px 0;
+}
+
+.card{
+    border-radius:0px;
+    overflow:hidden;
+    background:#111;
+    box-shadow:0 10px 30px rgba(0,0,0,.3);
+}
+
+.video{
+    width:100%;
+    display:block;
+    aspect-ratio:16/9;
+    object-fit:fill;
+}
+
+@media (max-width:768px){
+
+.container{
+    padding:80px 10px;
+}
+
+.card{
+    border-radius:12px;
+}
+
+}

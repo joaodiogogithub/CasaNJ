@@ -1,0 +1,183 @@
+.footer {
+  margin-top: 80px;
+
+  background-color: #0f1014;
+  color: #ffffff;
+
+  border-top: 1px solid #24252c;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+
+  padding: 25px 30px;
+
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1.2fr;
+
+  gap: 50px;
+}
+
+/* =========================
+   MARCA
+========================= */
+
+.brand h2 {
+  margin: 0 0 15px;
+
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.brand h2 span {
+  color: #8b5cf6;
+  font-size: 20px;
+}
+
+.brand p {
+  max-width: 330px;
+
+  color: #a9a9b0;
+
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+/* =========================
+   COLUNAS
+========================= */
+
+.column {
+  display: flex;
+  flex-direction: column;
+
+  gap: 10px;
+}
+
+.column h3 {
+  margin: 0 0 10px;
+
+  color: #ffffff;
+
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.column a {
+  color: #a9a9b0;
+
+  font-size: 14px;
+
+  text-decoration: none;
+
+  transition: 0.2s;
+}
+
+.column a:hover {
+  color: #9b6cff;
+}
+
+.column p {
+  margin: 0;
+
+  color: #a9a9b0;
+
+  font-size: 14px;
+
+  line-height: 1.5;
+}
+
+/* =========================
+   WHATSAPP
+========================= */
+
+.whatsapp {
+  display: inline-flex;
+
+  width: fit-content;
+
+  margin-top: 8px;
+
+  padding: 9px 18px;
+
+  background-color: #8b5cf6;
+
+  border-radius: 7px;
+
+  color: white !important;
+
+  font-weight: 600;
+
+  transition: 0.2s;
+}
+
+.whatsapp:hover {
+  background-color: #7c3aed;
+
+  transform: translateY(-2px);
+}
+
+/* =========================
+   PARTE INFERIOR
+========================= */
+
+.bottom {
+  border-top: 1px solid #24252c;
+
+  max-width: 1200px;
+
+  margin: 0 auto;
+
+  padding: 20px 30px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  color: #777780;
+
+  font-size: 12px;
+}
+
+.bottom p {
+  margin: 0;
+}
+
+/* =========================
+   RESPONSIVO
+========================= */
+
+@media (max-width: 800px) {
+  .container {
+    grid-template-columns: 1fr 1fr;
+
+    gap: 40px;
+  }
+
+  .brand {
+    grid-column: span 2;
+  }
+}
+
+@media (max-width: 500px) {
+  .container {
+    grid-template-columns: 1fr;
+
+    padding: 40px 25px;
+  }
+
+  .brand {
+    display:flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .bottom {
+    flex-direction: column;
+
+    gap: 8px;
+
+    text-align: center;
+  }
+}
