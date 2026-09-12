@@ -25,10 +25,10 @@ export default function ProdutosPage() {
             </p>
           </div>
 
-          <img 
+          {/* <img 
             src="/assets/castelo-linhas.png" 
             alt="Sobre Nós" 
-          />
+          /> */}
 
         </div>
       </section>
